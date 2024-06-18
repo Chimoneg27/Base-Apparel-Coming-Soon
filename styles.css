@@ -1,0 +1,36 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#banner, #banner img {
+    width: 100%;
+}
+
+header {
+    padding: 2rem;
+}
+
+header img {
+    width: 40%;
+    height: 30%;
+}
+
+.coming-soon {
+    padding: 1.25rem 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+#soon-head {
+    font-weight: 400;
+    color: red;
+}
+
+.coming-soon h2 {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
