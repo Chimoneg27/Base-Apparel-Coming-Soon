@@ -1,3 +1,28 @@
+/* 
+## Colors
+
+### Primary
+
+- Desaturated Red: hsl(0, 36%, 70%)
+- Soft Red: hsl(0, 93%, 68%)
+
+### Neutral
+
+- Dark Grayish Red: hsl(0, 6%, 24%)
+
+### Gradients
+
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+
+*/
+
+:root {
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+    --dark-gray-red:  hsl(0, 6%, 24%);
+}
+
 body {
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -16,7 +41,7 @@ header img {
 }
 
 .coming-soon {
-    padding: 1.25rem 0.8rem;
+    padding: 1.25rem 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,12 +50,37 @@ header img {
 }
 
 #soon-head {
-    font-weight: 400;
-    color: red;
+    font-weight: 300;
+    color: var(--Desaturated-Red);
 }
 
 .coming-soon h2 {
     width: 100%;
     text-align: center;
     font-weight: 600;
+    letter-spacing: 0.5rem;
+}
+
+.coming-soon p {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--Desaturated-Red);
+}
+
+footer {
+    text-align: center;
+}
+
+.email-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#email {
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: solid 1px var(--Desaturated-Red);
+    width: 60%;
 }
