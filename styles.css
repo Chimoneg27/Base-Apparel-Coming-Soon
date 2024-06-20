@@ -64,14 +64,15 @@ footer {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
+    position: relative;
 }
 
 #email {
     padding: 0.65rem;
     border-radius: 20px;
     border: solid 1px var(--Desaturated-Red);
-    width: 60%;
+    width: 65%;
 }
 
 #email:invalid {
@@ -84,13 +85,22 @@ footer {
 
 #submit {
     width: 15%;
-    padding: 0.65rem;
+    padding: 0.6rem;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1rem;
     border: none;
     border-radius: 20px;
     background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     color: white;
     z-index: 2;
-    margin-left: -2rem;
+    margin-left: -2.5rem;
+}
+
+#error-icn{
+    margin-right: -6.5rem;
+    position: absolute;
+    display: none;
 }
