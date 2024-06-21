@@ -1,0 +1,111 @@
+/* 
+### Gradients
+
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+
+*/
+
+:root {
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+    --dark-gray-red:  hsl(0, 6%, 24%);
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#banner, #banner img {
+    width: 100%;
+}
+
+header {
+    padding: 2rem;
+}
+
+header img {
+    width: 40%;
+    height: 30%;
+}
+
+.coming-soon {
+    padding: 1.25rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+#soon-head {
+    font-weight: 300;
+    color: var(--Desaturated-Red);
+}
+
+.coming-soon h2 {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+}
+
+.coming-soon p {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--Desaturated-Red);
+}
+
+footer {
+    text-align: center;
+}
+
+.email-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#email {
+    padding: 0.65rem;
+    border-radius: 20px;
+    border: solid 1px var(--Desaturated-Red);
+    width: 65%;
+}
+
+#email:invalid {
+  border-color: red;
+}
+
+#valid {
+    color: var(--Soft-Red);
+}
+
+#submit {
+    width: 15%;
+    padding: 0.58rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    color: white;
+    z-index: 2;
+    margin-left: -2.75rem;
+}
+
+#error-icn{
+    margin-right: -6.5rem;
+    position: absolute;
+    display: none;
+}
+
+input::placeholder {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--Desaturated-Red);
+}
