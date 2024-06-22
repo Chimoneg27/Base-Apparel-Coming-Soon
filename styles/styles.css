@@ -1,10 +1,9 @@
-/* 
-### Gradients
 
-- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
-- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
-
-*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 :root {
     --Desaturated-Red: hsl(0, 36%, 70%);
@@ -51,12 +50,15 @@ header img {
     justify-content: center;
     font-weight: 600;
     letter-spacing: 0.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .coming-soon p {
     font-size: 1rem;
     text-align: center;
     color: var(--Desaturated-Red);
+    margin-bottom: 2rem;
 }
 
 footer {
@@ -112,4 +114,8 @@ footer {
 input::placeholder {
     font-family: 'Josefin Sans', sans-serif;
     color: var(--Desaturated-Red);
+}
+
+#desktopImg {
+    display: none;
 }
